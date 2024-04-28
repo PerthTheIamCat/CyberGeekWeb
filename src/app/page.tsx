@@ -1,20 +1,21 @@
-import React from "react";
-import { GoRelFilePath } from "react-icons/go";
-import { GoAlertFill } from "react-icons/go";
 
-import { Button } from "@nextui-org/button";
-import { Input } from "@nextui-org/input";
+"use client";
+import React from "react";
+import { Boxes } from "../components/ui/background-boxes";
+import { cn } from "@/lib/utils/cn";
 
 export default function Home() {
   return (
-    <div className="flex font-kanit justify-center h-screen ">
-      <div className="flex flex-col">
-        <div className="px-[133px] text-[25px]">0 1 1 0</div>
-        <div className="px-[133px] text-[25px]">1 0 0 1</div>
-        <div className="px-[133px] text-[25px]">1 0 1 0</div>
-        <div className="text-[100px] px-[70px]">CGC</div>
-        <div className="text-[50px]">CyberGeekClub</div>
-      </div>
+    <div className="h-screen relative w-full overflow-hidden bg-black flex flex-col items-center justify-center rounded-lg">
+      <div className="absolute inset-0 w-full h-full bg-black z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+ 
+      <Boxes />
+      <h1 className={cn("md:text-4xl text-xl text-white relative z-20")}>
+        <img className="z-0 scale-[95%]" src="https://firebasestorage.googleapis.com/v0/b/cybergeek-storage-image.appspot.com/o/logoCGC_TW.png?alt=media&token=71bbdae0-f43b-4e89-85e2-a1a4701f2e12"/>
+      </h1>
+      <p className="text-center mt-2 text-neutral-300 relative z-20">
+       NOTHING WILL WORK UNLESS YOU DO
+      </p>
     </div>
   );
 }
