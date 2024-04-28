@@ -1,20 +1,32 @@
+"use client";
 import React from "react";
-import { GoRelFilePath } from "react-icons/go";
-import { GoAlertFill } from "react-icons/go";
-
-import { Button } from "@nextui-org/button";
-import { Input } from "@nextui-org/input";
+import { Boxes } from "../components/ui/background-boxes";
+import Image from "next/image";
+import logoIcon from "../img/logoCGC_TW.svg";
+import { FaQuoteRight } from "react-icons/fa";
+import { FaQuoteLeft } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="flex font-kanit justify-center h-screen ">
-      <div className="flex flex-col">
-        <div className="px-[133px] text-[25px]">0 1 1 0</div>
-        <div className="px-[133px] text-[25px]">1 0 0 1</div>
-        <div className="px-[133px] text-[25px]">1 0 1 0</div>
-        <div className="text-[100px] px-[70px]">CGC</div>
-        <div className="text-[50px]">CyberGeekClub</div>
-      </div>
+    <div className="h-screen relative w-full overflow-hidden bg-black flex flex-col items-center justify-center rounded-lg">
+      <div className="absolute inset-0 w-full h-full bg-black z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+
+      <Boxes />
+      <h1 className="">
+        <Image
+          priority
+          alt="Logo"
+          className="z-0 scale-90 pointer-events-none"
+          src={logoIcon}
+          width={500}
+          height={500}
+        />
+      </h1>
+      <p className="flex text-center mt-2 text-neutral-300 relative z-20 pointer-events-none gap-4">
+        <FaQuoteLeft /> 
+        NOTHING WILL WORK UNLESS YOU DO 
+        <FaQuoteRight />
+      </p>
     </div>
   );
 }
