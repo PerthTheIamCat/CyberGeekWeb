@@ -5,7 +5,7 @@ import { GoSignIn } from "react-icons/go";
 const navbar = () => {
   return (
     <>
-	<nav className="bg-black shadow shadow-gray-700 w-100 px-8 md:px-auto">
+	<nav className=" bg-opacity-60 shadow-5xl backdrop-filter backdrop-blur-sm sticky top-0 bg-black shadow shadow-gray-700 w-100 px-8 md:px-auto">
 		<div className="md:h-16 h-28 mx-auto md:px-4 flex items-center justify-between flex-wrap md:flex-nowrap">
 			<div className="text-white font-semibold font-kanit md:order-1 transition-all duration-250 hover:scale-110 ">
 					<div className='text-2xl px-4'>
