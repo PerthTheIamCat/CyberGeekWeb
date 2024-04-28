@@ -1,20 +1,31 @@
-
 "use client";
 import React from "react";
 import { Boxes } from "../components/ui/background-boxes";
-import { cn } from "@/lib/utils/cn";
+import Image from "next/image";
+import logoIcon from "../img/logoCGC_TW.svg";
+import { FaQuoteRight } from "react-icons/fa";
+import { FaQuoteLeft } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div className="h-screen relative w-full overflow-hidden bg-black flex flex-col items-center justify-center rounded-lg">
       <div className="absolute inset-0 w-full h-full bg-black z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
- 
+
       <Boxes />
-      <h1 className={cn("md:text-4xl text-xl text-white relative z-20")}>
-        <img className="z-0 scale-[95%]" src="https://firebasestorage.googleapis.com/v0/b/cybergeek-storage-image.appspot.com/o/logoCGC_TW.png?alt=media&token=71bbdae0-f43b-4e89-85e2-a1a4701f2e12"/>
+      <h1 className="">
+        <Image
+          priority
+          alt="Logo"
+          className="z-0 scale-90 pointer-events-none"
+          src={logoIcon}
+          width={500}
+          height={500}
+        />
       </h1>
-      <p className="text-center mt-2 text-neutral-300 relative z-20">
-       NOTHING WILL WORK UNLESS YOU DO
+      <p className="flex text-center mt-2 text-neutral-300 relative z-20 pointer-events-none gap-4">
+        <FaQuoteLeft /> 
+        NOTHING WILL WORK UNLESS YOU DO 
+        <FaQuoteRight />
       </p>
     </div>
   );
