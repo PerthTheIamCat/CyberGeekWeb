@@ -4,11 +4,8 @@ import { Input } from "@nextui-org/input";
 
 export default function Home() {
   return (
-    <div className="flex h-[100vh]">
-      <Button color="primary">
-        Button
-      </Button>
-      <Input type="name" label="Name" placeholder="ใส่่ชื่อมาอีสัส" />
+    <div className="h-screen">
+      TEST
     </div>
   );
 }
