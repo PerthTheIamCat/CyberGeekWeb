@@ -16,7 +16,8 @@ const navbar = () => {
 					</div>
 			</div>
 			<div className="text-white order-3 w-full md:w-auto md:order-2">
-				<ul className="flex font-semibold justify-between ">
+				
+				<ul className="flex font-semibold justify-between font-kanit">
 				
 					<li className="group md:px-4 md:py-2 transition-all duration-250 hover:scale-110 hover:text-green-400">
 						<a href="#">
@@ -45,7 +46,7 @@ const navbar = () => {
 				</ul>
 			</div>
 			<div className="order-2 md:order-3">
-				<button className="px-4 py-2   transition-all duration-250 hover:scale-110 hover:text-green-400 text-gray-50 rounded-xl flex items-center gap-2">
+				<button className="px-4 py-2 font-kanit font-semibold transition-all duration-250 hover:scale-110 hover:text-green-400 text-gray-50 rounded-xl flex items-center gap-2">
 					<GoSignIn className=' text-2xl'/>
 					<span>เข้าสู่ระบบ</span>
 				</button>
